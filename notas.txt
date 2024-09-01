@@ -1,0 +1,23 @@
+Mobile (Mobile-first):
+
+El menú (.nav-list) está oculto por defecto.
+El ícono de hamburguesa (.menu-icon) está visible.
+Al hacer clic en el ícono de hamburguesa, el menú se despliega.
+Desktop:
+
+El ícono de hamburguesa está oculto (display: none).
+El menú de navegación se muestra en línea (display: flex).
+
+
+
+.nav-list {
+    display: none;
+    flex-direction:column; /* Mostrar las opciones en columna */
+    background-color:#fff;
+    position:absolute;
+    top: 60px; /* Ajustar según la altura del header */
+    right: 0px;
+    width: 100%;
+    text-align:center;
+
+}

@@ -1,0 +1,213 @@
+/*Reset de margenes y paddings*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*para que cuando agrego margin, padding o border, no crezcan más que lo que le digo */
+}
+
+body {
+    margin:0;
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    color:black;
+}
+
+header {
+    
+    background-color:rgb(255,238,204);
+    padding: 10px 10px;
+    overflow: hidden;
+    display:flex;
+}
+
+header .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: rgb(245,245,245);
+    color:#000;
+    max-width:1400px; /*hace que hasta 1400px está siempre en la esquina centrado, después se empieza a mover*/
+    gap:8px;
+    
+}
+
+.logo-img {
+    height:auto;
+    width:150px;
+    margin:0;
+    padding: 15px 10px;
+}
+
+h1{ font-size: 3em;}
+h2{ font-size: 2em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+button {
+    font-size:1em;
+    background-color:#FFB347;
+    padding:10px 30px;
+    border-radius:5px;
+    color:white;
+    border:2px;
+}
+
+header .logo-menu{
+    display:flex;
+}
+.entrada-img {
+    height:auto;
+    width:100%;
+    display:block;
+}
+
+.nav-list {
+    display:none;
+}
+.nav-list li {
+    margin: 0 10 px;
+}
+.nav-list a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    margin-left:84px;
+}
+
+/*acá pongo el menú hamburguesa*/
+.menu-bar {
+    height: 2px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+#hero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    flex-direction: row;
+    background-color:rgb(255,238,204);
+    padding: 10px 10px;
+    overflow: hidden;    
+    width:100%;
+}
+
+.hero-content {
+    display:flex;
+    align-items:center;
+    text-align:center;
+    justify-content:center;
+    width:100%;
+    max-width:1200px;
+    padding: 0 20px; 
+}
+
+.entrada-img {}
+
+#Quienes-somos{
+    background-color: rgb(255,238,204);
+    color:black;
+    display:flex;
+}
+#Quienes-somos .container-nosotros{
+    text-align: center;
+    padding:20px 12px;
+}
+
+#Quienes-somos p{
+    display:flex;
+}
+#nuestros-servicios {
+    text-align:center;
+}
+#nuestros-servicios p{
+    display:none;
+}
+#nuestros-servicios h2{
+    margin-top:0;
+    
+}
+#nuestros-servicios h3{
+    color:white;
+}
+#nuestros-servicios .container{
+    padding: 50px 12px;
+}
+#nuestros-servicios .carta{
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("public/images/foto\ sala\ espera.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("public/images/Box\ 1.JPG");
+    background-position: center center;
+    background-size: cover;
+}
+
+.carta:first-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("public/images/Espaldar.JPG");
+    background-position: center center;
+    background-size: cover;
+}
+
+.carta:first-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("public/images/MEP.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none; /* Ocultar icono hamburguesa en desktop */
+    }
+
+    .nav-list {
+        display: flex; /* Mostrar opciones en fila */
+        position: static; /* Reestablecer la posición */
+        flex-direction: row; /* Opciones en fila */
+        width: auto; /* Restablecer el ancho */
+        background-color: transparent; /* Fondo transparente */
+        list-style-type: none;
+    }
+    
+
+    .nav-list li {
+        margin: 0 10px;
+    }
+}
