@@ -33,18 +33,17 @@
 
     <section id="hero">
         <div class="hero-content">    
-            <img src="public/images/Entrada.jpg" alt="Kinephys Entrada" class="entrada-img">
-            <form action="/form.html">
-                <button> + Info</button>
-            </form>
+            <img src="public/images/Entrada.jpg" alt="Kinephys Entrada" class="entrada-img"> 
+                <button class="boton-info"> + Info</button>    
         </div>
     </section>
     
     <section id="Quienes-somos">
-        <div class="container-nosotros">
+        <div class="container-conocenos">
             <div class="img"></div>
             <h2>Quienes somos</h2>
            <p>Somos un consultorio de kinesiología conformado por un grupo de profesionales dedicado a la rehabilitación funcional de distintas patologías. Tenemos el objetivo de mejorar la independencia funcional y la calidad de vida de nuestros pacientes y al mismo tiempo hacerlos sentir cómodos a través de una atención personalizada. </p>
+                <button class="boton-conocenos"> Conocenos</button>
         </div>
     </section>      
 
@@ -52,48 +51,41 @@
         <div class="container">
             <h2>Nuestros servicios</h2>
             <div class="servicios">
-            <div class="carta">
-                <h3>Kinesiología traumatológica y deportiva</h3>
-                <p>Falta información</p>
-                <form action="/form.html">
+                <div class="kinesio-traumatologica">
+                    <h3>Kinesiología traumatológica y deportiva</h3>
+                    <p>Falta información</p>
                     <button class="button"> + Info</button>
-                </form>
-            </div>
-            <div class="carta">
-                <h3>Actividad física en el adulto mayor</h3>
-                <p>Para pacientes mayores que busquen mejorar su acondicionamiento físico general a través del aumento de la capacidad aeróbica, el fortalecimiento y la flexibilidad.</p>
-                <form action="/form.html">
+                </div>
+                <div class="actividad-fisica-adulto">    
+                    <h3>Actividad física en el adulto mayor</h3>
+                    <p>Para pacientes mayores que busquen mejorar su acondicionamiento físico general a través del aumento de la capacidad aeróbica, el fortalecimiento y la flexibilidad.</p>
                     <button class="button"> + Info</button>
-                </form>
-            </div>
-            <div class="carta">
-                <h3>Osteopatía</h3>
-                <p>Para restaurar el equilibrio del cuerpo a través de técnicas manuales que busquen mejorar su función y promover la autocuración.</p>
-                <form action="/form.html">
+                </div>
+                <div class="osteo">
+                    <h3>Osteopatía</h3>
+                    <p>Para restaurar el equilibrio del cuerpo a través de técnicas manuales que busquen mejorar su función y promover la autocuración.</p>
                     <button class="button"> + Info</button>
-                </form>
-            </div>    
-            <div class="carta">
-                <h3>MEP</h3>
-                <p>Fomenta la analgesia, regeneración del tejido y normalización del PH local.</p>
-                <form action="/form.html">
+                </div>
+                <div class="MEP">
+                    <h3>MEP</h3>
+                    <p>Fomenta la analgesia, regeneración del tejido y normalización del PH local.</p>
                     <button class="button"> + Info</button>
-                </form>
-            </div>
-            <div class="carta">
-                <h3>Rehabilitación respiratoria</h3>
-                <p>Dirigido a disminuir los síntomas (principalmente disnea), optimizar la independencia y mejorar la calidad de vida en personas con enfermedad respiratoria.</p>
-                <form action="/form.html">
+                </div>
+                <div class="rehab-respi">
+                    <h3>Rehabilitación respiratoria</h3>
+                    <p>Dirigido a disminuir los síntomas (principalmente disnea), optimizar la independencia y mejorar la calidad de vida en personas con enfermedad respiratoria.</p>
                     <button class="button"> + Info</button>
-                </form>
-            </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="foto entrada">
-        <img src="public/images/Entrada principal.jpg" alt="Kinephys Entrada" class="entrada principal">        
+    <section id="foto-entrada">
+       <div class="fotoentrada-content"> 
+            <img src="public/images/Entrada principal.jpg" alt="Kinephys Entrada" class="entrada principal">        
+        </div>
     </section>
+    
     <section id="Contacto">
         <div class="container">
             <h3>Contactanos</h3>
@@ -104,7 +96,25 @@
             <h3>Aristóbulo del Valle 122 - Lanús Oeste</h3>
         </div>
     </section>
- 
+
+    <div class="formulario-contacto">
+    <form action="Formulario"method="post"></form> 
+    <h3 id="Título-formulario" class="form">Formulario de contacto</h3>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Tu email"><br>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="telefono" name="telefono" id="telefono" placeholder="Tu teléfono"><br>
+
+    <label for="comentario">Dejanos tu mensaje:</label>
+    <textarea name="comentario" rows="4" width=10px id="comentario" placeholder="Tu mensaje..."></textarea>
+</form>
+</div> 
+
     <footer>
         <div class="container">
             <p>&copy; Kinephys 2024, All Right Reserved</p> 
